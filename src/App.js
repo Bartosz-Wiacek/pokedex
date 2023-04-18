@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import Home from "./Home";
 
 function App() {
+  function makeArray() {
+    let array = [];
+    for (let i = 1; i <= 20; i++) {
+      array.push(i);
+    }
+    return array;
+  }
+
+  const pokemonIds = makeArray();
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <a>Hello World!</a>
+      <Home pokemonIds={pokemonIds} />
     </div>
   );
 }
