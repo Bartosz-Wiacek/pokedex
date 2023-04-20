@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import PokemonFetch from "./PokemonFetch";
+import Navbar from "../Components/Navbar";
 
 function HomePokemons() {
   const [page, setPage] = useState(1);
@@ -26,6 +27,7 @@ function HomePokemons() {
 
   return (
     <div>
+      <Navbar />
       <div className="App">
         <PokemonFetch pokemonIds={pokemonIds} />
       </div>
