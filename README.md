@@ -1,3 +1,7 @@
+#INFO
+
+In this assignment, I created a Pokédex using React - a catalog of Pokémon that a trainer can browse to get detailed information about any Pokémon. The application is deployed and can be accessed at https://bartosz-wiacek.github.io/pokedex/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
