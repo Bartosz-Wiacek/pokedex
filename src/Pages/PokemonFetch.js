@@ -1,8 +1,8 @@
-import Pokemon from "./Components/Pokemon";
+import Pokemon from "../Components/Pokemon";
 import React, { useState, useEffect } from "react";
-import "./Home.css";
+import "./PokemonFetch.css";
 
-function Home({ pokemonIds }) {
+function PokemonFetch({ pokemonIds }) {
   const [pokemon, setPokemonData] = useState([]);
 
   useEffect(() => {
@@ -30,4 +30,4 @@ function Home({ pokemonIds }) {
     </div>
   );
 }
-export default Home;
+export default PokemonFetch;
