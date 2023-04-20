@@ -1,14 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Tilt Warp", cursive;
+  font-family: "Press Start 2P", cursive;
   font-size: 1.2rem;
 }
 :root {
-  --mainColor: #ff8100;
-  --secondaryColor: #793c00;
+  --mainColor: #5068f1;
+  --secondaryColor: #95a2eb;
   --textColor: #eee;
 }
 header {

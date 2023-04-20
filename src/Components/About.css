@@ -3,12 +3,7 @@
   margin: 0 auto;
   text-align: center;
   padding: 50px 20px;
-}
-
-.profile-picture {
-  border-radius: 50%;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  padding-top: 90px;
 }
 
 .about-me h1 {

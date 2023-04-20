@@ -1,13 +1,28 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import PokemonFetch from "./PokemonFetch";
 import Navbar from "../Components/Navbar";
+import "./HomePokemons.css";
 
 function HomePokemons() {
   const [page, setPage] = useState(1);
+  const [totalPokemons, setTotalPokemons] = useState(0);
+
+  useEffect(() => {
+    const fetchTotalPokemons = async () => {
+      const response = await fetch("https://pokeapi.co/api/v2/pokemon/");
+      const data = await response.json();
+      setTotalPokemons(data.count);
+    };
+    fetchTotalPokemons();
+  }, []);
 
   function makeArray() {
     let array = [];
-    for (let i = (page - 1) * 20 + 1; i <= page * 20; i++) {
+    for (
+      let i = (page - 1) * 20 + 1;
+      i <= page * 20 && i <= totalPokemons;
+      i++
+    ) {
       array.push(i);
     }
     return array;
@@ -31,8 +46,22 @@ function HomePokemons() {
       <div className="App">
         <PokemonFetch pokemonIds={pokemonIds} />
       </div>
-      <button onClick={handlePrevClick}>Previous</button>
-      <button onClick={handleNextClick}>Next</button>
+      <div className="button-container">
+        <button
+          onClick={handlePrevClick}
+          disabled={page === 1}
+          className={page === 1 ? "disabled" : ""}
+        >
+          Previous
+        </button>
+        <button
+          onClick={handleNextClick}
+          disabled={page * 20 >= totalPokemons}
+          className={page * 20 >= totalPokemons ? "disabled" : ""}
+        >
+          Next
+        </button>
+      </div>
     </div>
   );
 }

@@ -6,16 +6,24 @@ function AboutMe() {
     <div>
       <Navbar />
       <div className="about-me">
-        <br></br>
-        <h1>About Me</h1>
+        <h1>Who was in Paris?</h1>
         <p>
-          Hi, I'm Bartosz! I'm a student based in Denamrk. I enjoy coding, and
-          I'm passionate about AI.
+          Paris syndrome (French: syndrome de Paris; Japanese: パリ症候群,
+          romanized: Pari shōkōgun) is a sense of extreme disappointment
+          exhibited by some individuals when visiting Paris, who feel that the
+          city was not what they had expected. The condition is commonly viewed
+          as a severe form of culture shock.
         </p>
         <p>
-          I have experience in coding, and I'm always eager to learn new things
-          and take on new challenges. When I'm not working, you can find me in
-          the gym.
+          The syndrome is characterized by a number of psychiatric symptoms such
+          as acute delusional states, hallucinations, feelings of persecution
+          (perceptions of being a victim of prejudice, aggression, hostility
+          from others), derealization, depersonalization, anxiety, as well as
+          psychosomatic manifestations such as dizziness, tachycardia, sweating
+          most notably, but also others, such as vomiting. While the syndrome
+          has been particularly noted among Japanese tourists, it has also
+          affected other travellers or temporary residents from East and
+          Southeast Asia, such as those from China, South Korea, and Singapore.
         </p>
       </div>
     </div>
