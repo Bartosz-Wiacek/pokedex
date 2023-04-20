@@ -35,7 +35,7 @@ function Navbar() {
     <header>
       <h3>Bartosz</h3>
       <nav ref={navRef}>
-        <a href="/#">
+        <a href="/pokedex/">
           <AiFillHome /> Home
         </a>
         <a href="https://www.linkedin.com/in/bartosz-wiacek/">
@@ -44,7 +44,7 @@ function Navbar() {
         <a href="https://github.com/Bartosz-Wiacek">
           <RxGithubLogo /> Blog
         </a>
-        <a href="/#/about">
+        <a href="/pokedex/#/about">
           <GiBarefoot /> About me
         </a>
         {/* Render a button to close the navigation menu */}

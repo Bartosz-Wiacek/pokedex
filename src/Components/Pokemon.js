@@ -26,7 +26,7 @@ function Pokemon({ pokemon }) {
   const typeColor = typeColors[pokemon.types[0].type.name];
 
   const onClick = () => {
-    window.location = `https://bartosz-wiacek.github.io/pokedex/${pokemon.id}`;
+    window.location = `https://bartosz-wiacek.github.io/pokedex/#/pokemon/${pokemon.id}`;
   };
 
   return (
