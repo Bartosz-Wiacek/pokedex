@@ -25,7 +25,7 @@ function Pokemon({ pokemon }) {
   };
 
   const onClick = () => {
-    window.location.href = `pokedex/#/pokemon/${pokemon.id}`;
+    window.location.href = `/${process.env.PUBLIC_URL}#/pokemon/${pokemon.id}`;
   };
 
   const typeColor = typeColors[pokemon.types[0].type.name];
