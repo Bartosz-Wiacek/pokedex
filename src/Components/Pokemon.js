@@ -24,24 +24,20 @@ function Pokemon({ pokemon }) {
     fairy: "#EE99AC",
   };
 
-  const onClick = () => {
-    window.location.href = `/${process.env.PUBLIC_URL}#/pokemon/${pokemon.id}`;
-  };
-
   const typeColor = typeColors[pokemon.types[0].type.name];
 
   return (
-    <div
+    <Link
+      to={`/pokemon/${pokemon.id}`}
       className="pokeBox"
       style={{ backgroundColor: typeColor }}
-      onClick={onClick}
     >
       <div className="id">#{pokemon.id}</div>
       {pokemon.sprites && (
         <img src={pokemon.sprites.front_default} alt={pokemon.name} />
       )}
       <div className="name">{pokemon.name}</div>
-    </div>
+    </Link>
   );
 }
 

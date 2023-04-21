@@ -8,7 +8,7 @@ import About from "./Components/About";
 function App() {
   return (
     <div className="App">
-      <HashRouter basename="/pokedex">
+      <HashRouter>
         <Routes>
           <Route index element={<HomePokemons />} />
           <Route path="/about" element={<About />} />
