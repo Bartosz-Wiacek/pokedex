@@ -1,5 +1,6 @@
 import React from "react";
 import "./Pokemon.css";
+import { Link } from "react-router-dom";
 
 function Pokemon({ pokemon }) {
   const typeColors = {
@@ -23,11 +24,11 @@ function Pokemon({ pokemon }) {
     fairy: "#EE99AC",
   };
 
-  const typeColor = typeColors[pokemon.types[0].type.name];
-
   const onClick = () => {
-    window.location = `https://bartosz-wiacek.github.io/pokedex/#/pokemon/${pokemon.id}`;
+    window.location.href = `/#/pokemon/${pokemon.id}`;
   };
+
+  const typeColor = typeColors[pokemon.types[0].type.name];
 
   return (
     <div

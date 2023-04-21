@@ -11,8 +11,8 @@ function App() {
       <HashRouter>
         <Routes>
           <Route index element={<HomePokemons />} />
-          <Route path="/pokedex/#/about" element={<About />} />
-          <Route path="/pokedex/#/pokemon/:id" element={<PokemonDetails />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/pokemon/:id" element={<PokemonDetails />} />
         </Routes>
       </HashRouter>
     </div>
